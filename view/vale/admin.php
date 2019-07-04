@@ -4,7 +4,7 @@
 
 <div class="card m-2">
   <div class="card-header">
-    Ticketeras
+    Vales
   </div>
   <div class="p-2">
     <table class="table">
@@ -16,7 +16,7 @@
       <tbody>
         <?php while ($row = $vars['result']->fetch_assoc()) { ?>
           <tr>
-            <td><?php echo $row["id_ticketera"]; ?></td>
+            <td><?php echo $row["id_vale"]; ?></td>
           </tr>
         <?php } ?>        
       </tbody>

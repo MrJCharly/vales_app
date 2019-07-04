@@ -1,11 +1,14 @@
 <?php
-  //require_once "db/connect.php";
   error_reporting(E_ALL); ini_set('display_errors', 1);
-  
-  require_once "controller/TicketeraController.php";
-  $ctrl = new TicketeraController();
+  list($controller, $action) = explode('/', $_GET['v']);
 
-  $ctrl->actionAdmin();
+  $controllerClass = ucfirst($controller) . "Controller";
+  $actionMethod = "action" . ucfirst($action);
+
+  require_once "controller/$controllerClass.php";
+  $ctrl = new $controllerClass();
+
+  $ctrl->$actionMethod();
   //require_once
   //$view = $_GET['v'];
   //require_once "controller/main.php";

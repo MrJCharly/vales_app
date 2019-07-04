@@ -10,10 +10,10 @@
         <a class="nav-link" href="index.php?v=ticketeras/admin">Ticketeras</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="index.php?v=vales/admin">Vales</a>
+        <a class="nav-link" href="index.php?v=vale/admin">Vales</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="index.php?v=asignaciones/admin">Asignaciones</a>
+        <a class="nav-link" href="index.php?v=asignacion/admin">Asignaciones</a>
       </li>           
     </ul>    
   </div>

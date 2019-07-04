@@ -1,11 +1,8 @@
 <?php  
 
-  class Controller {
-    protected $params;
+  class Controller {    
 
-    public function render($view, $params) {      
-      $this->params = $params;
-      //include("view/$view.php");
+    public function render($view, $vars) {
       require_once "controller/main.php";
     }
   }
