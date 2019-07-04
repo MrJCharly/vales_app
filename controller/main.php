@@ -13,7 +13,7 @@
 ?>
 
 <div class="container-fluid">
-  <?php include("view/$view.php"); ?>
+  <?php include("view/ticketeras/$view.php"); ?>
 </div>
 
 <?php
