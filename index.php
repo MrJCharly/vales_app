@@ -1,6 +1,7 @@
 <?php
   error_reporting(E_ALL); ini_set('display_errors', 1);
-  list($controller, $action) = explode('/', $_GET['v']);
+  $v = $_GET['v'] ?? $_POST['v'];
+  list($controller, $action) = explode('/', $v);
 
   $controllerClass = ucfirst($controller) . "Controller";
   $actionMethod = "action" . ucfirst($action);

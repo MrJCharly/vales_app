@@ -12,5 +12,18 @@
         'result' => $result
       ));
     }
+
+    public function actionCreate() {
+      $model = new Ticketera();
+
+      if (isset($_POST['Ticketera'])) {
+        $model->setAttributes($_POST['Ticketera']);
+        $model->save();
+        
+        $this->redirect('ticketeras/admin');
+      }
+
+      $this->render('ticketeras/create', array());
+    }
   }
 ?>
